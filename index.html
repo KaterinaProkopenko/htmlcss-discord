@@ -14,9 +14,10 @@
 <body>
 
     <header>
-        <div class="contenitore">
+        <div class="container">
             
             <div class="header-top">
+
                 <!-- Logo -->
                 <div class="logo">
                     <img src="img/logo.svg" alt="Logo">
@@ -24,38 +25,50 @@
                
 
                <!-- Lista -->
-               <ul>
-                   <li><a href="#">Scarica</a></li>
-                   <li><a href="#">Perché Discord</a></li>
-                   <li><a href="#">Nitro</a></li>
-                   <li><a href="#">Sicurezza</a></li>
-                   <li><a href="#">Assistenza</a></li>
-               </ul>
+               <div class="header-list">
+                    <ul>
+                        <li><a href="#">Scarica</a></li>
+                        <li><a href="#">Perché Discord</a></li>
+                        <li><a href="#">Nitro</a></li>
+                        <li><a href="#">Sicurezza</a></li>
+                        <li><a href="#">Assistenza</a></li>
+                    </ul>
+               </div>
+               
 
                <!-- Buttone -->
                <div class="header-button">
-                   <button>Accedi</button>
+                   <button>
+                       <a href="#">Accedi</a>
+                   </button>
                </div>
                
             </div>
 
-            <div class="jumbotron text-jumbotron">
+            <div id="jumbotron" class="text-jumbotron">
 
-           <!-- Titolo -->
+               <!-- Titolo -->
                <h1>Il tuo posto per parlare</h1>
 
-            <!-- Testo -->
+               <!-- Testo -->
                <p>
                    Che tu faccia parte di un club scolastico, gruppo di gamer, comunità artistica mondiale, o semplicemente di un piccolo gruppo di amici che vuole passare il tempo assieme, Discord rende più facile chiacchierare ogni giorno e ritrovarsi più spesso.
                </p>
 
-            <!-- Buttoni -->
+               <!-- Buttoni -->
                <div class="button">
                     <button class="text-button">
-                        <i class="fas fa-long-arrow-alt-down"></i>
-                        Scarica per Mac
+                        <a id="black" href="#">
+                            <i class="fas fa-long-arrow-alt-down"></i>
+                            Scarica per Mac
+                        </a> 
                     </button>
-                    <button class="text-button">Apri Discord nel tuo browser</button>
+
+                    <button class="text-button">
+                        <a id="white" href="#">
+                            Apri Discord nel tuo browser
+                        </a>
+                    </button>
                </div>
                 
             </div>

@@ -5,15 +5,17 @@
 }
 
 header {
+    min-width: 1100px;
     width: 80%;
     height: 400px;
     background-image: url(../img/jumbo.png);
-    background-size: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
     margin: 0 auto;
 }
 
 ul {
-    padding: 0px 95px;
+    text-align: center;
 }
 
 li {
@@ -23,6 +25,29 @@ li {
 
 a {
     text-decoration: none;
+}
+
+li a:hover,
+button a:hover {
+    text-decoration: underline;
+}
+
+header, 
+.header-top .header-list a, 
+#jumbotron .button button #white {
+    color: white;
+}
+
+.header-button button a,
+.button button #black {
+    color: black;
+}
+
+.header-top .header-list, 
+li, 
+.header-top .logo, 
+.header-top .header-button {
+    display: inline-block;
 }
 
 .button button:first-child {
@@ -35,25 +60,7 @@ a {
     border: 1px solid rgb(31, 29, 29);
 }
 
-header, a, 
-.button button:last-child
- {
-    color: white;
-}
-
-ul, li, .header-top .logo, .header-button {
-    display: inline-block;
-}
-
-.jumbotron h1 {
-    padding: 20px 30px;
-}
-
-.jumbotron p {
-    padding-bottom: 20px;
-}
-
-.contenitore {
+.container {
     width: 100%;
     height: 100%;
 }
@@ -67,12 +74,34 @@ ul, li, .header-top .logo, .header-button {
 
 .header-top .logo {
     width: 130px;
-    height: 35px;
+    height: 80px;
 }
 
 .header-top .logo img {
     vertical-align: middle;
 }
+
+.header-list {
+    width: 665.67px;
+    height: 100%;
+}
+
+#jumbotron h1 {
+    padding: 20px 30px;
+}
+
+#jumbotron p {
+    padding-bottom: 20px;
+    line-height: 1.6rem;
+}
+
+
+
+
+
+
+
+
 
 .header-top .header-button button {
     padding: 6px 10px;
@@ -81,26 +110,26 @@ ul, li, .header-top .logo, .header-button {
     font-size: 12px;
 }
 
-.jumbotron {
-    width: 55%;
-    text-align: center;
-    margin: 0 auto;
-    margin-top: 10px;
-}
-
-.jumbotron p {
-    font-size: 17px;
-}
-
-.jumbotron .button button{
-    padding: 10px 18px;
-    border-radius: 30px;
-}
-
 .text-jumbotron {
     font-size: 18px;
 }
 
 .button .text-button {
     font-size: 15px;
+}
+
+#jumbotron p {
+    font-size: 17px;
+}
+
+#jumbotron .button button{
+    padding: 10px 18px;
+    border-radius: 30px;
+}
+
+#jumbotron {
+    width: 55%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 10px;
 }

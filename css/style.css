@@ -6,19 +6,18 @@
 
 header {
     min-width: 1100px;
-    width: 80%;
-    height: 400px;
+    width: 100%;
     background-image: url(../img/jumbo.png);
     background-repeat: no-repeat;
     background-size: cover;
     margin: 0 auto;
 }
 
-ul {
+.header-list ul {
     text-align: center;
 }
 
-li {
+.header-list ul li {
     list-style-type: none;
     padding: 0 15px;
 }
@@ -28,7 +27,8 @@ a {
 }
 
 li a:hover,
-button a:hover {
+button a:hover,
+.bottom-text button a:hover {
     text-decoration: underline;
 }
 
@@ -44,7 +44,7 @@ header,
 }
 
 .header-top .header-list, 
-li, 
+.header-list ul li, 
 .header-top .logo, 
 .header-top .header-button {
     display: inline-block;
@@ -61,8 +61,9 @@ li,
 }
 
 .container {
-    width: 100%;
-    height: 100%;
+    width: 80%;
+    height: 400px;
+    margin: 0 auto;
 }
 
 .header-top {
@@ -88,20 +89,14 @@ li,
 
 #jumbotron h1 {
     padding: 20px 30px;
+    font-size: 40px;
 }
 
 #jumbotron p {
     padding-bottom: 20px;
     line-height: 1.6rem;
+    font-size: 17px;
 }
-
-
-
-
-
-
-
-
 
 .header-top .header-button button {
     padding: 6px 10px;
@@ -118,13 +113,219 @@ li,
     font-size: 15px;
 }
 
-#jumbotron p {
-    font-size: 17px;
-}
-
 #jumbotron .button button{
     padding: 10px 18px;
     border-radius: 30px;
+}
+
+/* section */
+
+section {
+    width: 100%;
+    margin-top: 40px;
+}
+
+.immagine img {
+    width: 90%;
+    height: 90%;
+}
+
+.img-coach img {
+    width: 80%;
+}
+
+.text h1 {
+    font-size: 40px;
+    padding-top: 59px;
+}
+
+.text p {
+    font-size: 17px;
+    padding-top: 20px;
+}
+
+.top-text h1{
+    font-size: 40px;
+}
+
+.top-text p {
+    padding-top: 15px;
+    font-size: 17px;
+}
+
+.img-large img {
+    width: 1030px;
+}
+
+.bottom-text button {
+    padding: 6px 10px;
+    background-color: rgb(142, 161, 225);
+    border: 1px solid rgb(142, 161, 225);
+    border-radius: 20px;
+    padding: 10px 18px;
+}
+
+.bottom-text button a {
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+}
+
+.social-column h1 {
+    color: rgb(142, 161, 225);
+}
+
+.column ul li{
+    list-style-type: none;
+    line-height: 30px;
+}
+
+.column ul li a {
+    color: white;
+}
+
+.registration button {
+    padding: 6px 10px;
+    background-color: rgb(142, 161, 225);
+    border: 1px solid rgb(142, 161, 225);
+    border-radius: 20px;
+    font-size: 12px;
+}
+
+.registration button a {
+    color: white;
+}
+
+.footer-logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.float-left {
+    float: left;
+}
+
+.clearfix {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+section .container {
+    height: 100%;
+}
+
+.container .immagine {
+    width: 60%;
+    height: 494px;
+}
+
+.container .text{
+    width: 30%;
+    height: 494px;
+}
+
+.container .voice-connected {
+    margin: 0 5%;
+}
+
+.container .top-text {
+    width: 85%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.container .bottom-text {
+    text-align: center;
+}
+
+.container .img-large {
+    width: 100%;
+    text-align: center;
+}
+
+.bottom-text .stars {
+    width: 450px;
+    height: 70px;
+    background-image: url(../img/stars.svg);
+    background-repeat: no-repeat;
+    background-size: 97%;
+    line-height: 70px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+footer .large-container {
+    width: 100vw;
+    max-width: 100%;
+    height: 450px;
+    background-color: rgb(26, 25, 25);
+    margin-top: 90px;
+}
+
+.container .footer-top {
+    width: 100%;
+    height: 300px;
+    border-bottom: 1px solid rgb(142, 161, 225);;
+}
+
+.footer-top .social-column {
+    width: 220px;
+    height: 300px;
+    margin-right: 40px;
+}
+
+
+.social-column .language {
+    color: white;
+    padding-top: 20px;
+}
+
+.language img {
+    width: 20px;
+    vertical-align: middle;
+}
+
+.language i {
+    vertical-align: middle;
+}
+
+.social-column .social-network {
+    color: white;
+    padding-top: 20px;
+    font-size: 17px;
+}
+
+.social-network .padding {
+    padding: 0 10px;
+}
+
+.social-network .fa-twitter {
+    padding-right: 5px;
+}
+
+ul .title-list {
+    color: rgb(142, 161, 225);
+    font-weight: bold;
+}
+
+.footer-top .column {
+    margin: 0 50px;
+    padding-bottom: 15px;
+}
+
+.container .footer-bottom {
+    width: 100%;
+    margin-top: 25px;
+}
+
+.footer-bottom .footer-logo {
+    width: 115px;
+    height: 32px;
+}
+
+.footer-bottom .registration {
+    float: right;
 }
 
 #jumbotron {
